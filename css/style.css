@@ -1,0 +1,117 @@
+:root {
+    --primary-color:#cda274;
+    --secondary-color:#292f36;
+    --white-color:#fff;
+    --black-color:#000;
+    --shadow: 0 0 5px 5px rgba(41,47, 54, 0.2);
+    --white-bg-color:#fff;
+    --dark-bg-color:#292f36;
+
+}
+
+.body__dark{
+    --primary-color:#cda274;
+    --secondary-color:#cda274;
+    --white-color:#fff;
+    --black-color:#000;
+    --shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+    --white-bg-color:#292f36;
+    --dark-bg-color:#fff;
+
+}
+
+header .container{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(255, 159, 80);
+    padding:10px 0;
+
+}
+
+header i{
+    font-size: 2.5rem;
+}
+
+.hero{
+    text-align: center;
+    font-size: 2rem;
+    background-image: url(../imgs/Spherical-Closed-Universe-Concept.webp);
+    background-position: center ;
+    padding: 50px 0;
+    color: wheat;
+}
+.search__users{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 60px 0;
+
+}
+
+.input__search{
+    border-bottom: 1px solid coral;
+    width: 30%;
+    text-align: start;
+    margin-right: 20px;
+    color: rgb(255, 159, 80);
+}
+.search__input::placeholder{
+    color: rgb(255, 159, 80);
+}
+.search__input{
+    border: none;
+    width: 94%;
+    background: none;
+    outline: none;
+   color: rgb(255, 159, 80);;
+}
+
+
+.refresh,
+.clear{
+    background-color: rgb(255, 159, 80);
+    padding: 3px 10px;
+    margin: 0 2px;
+    color: wheat;
+    border-radius: 3px;
+}
+
+.main__users .container{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 30px;
+}
+.card{
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    box-shadow:var(--shadow);
+    background-color: var(--white-bg-color);
+    color: var(--secondary-color)
+}
+.card .span{
+ margin: 10px 0;
+}
+.card img{
+    width: 150px;
+    margin: 0 auto;
+    border-radius:50% ;
+    margin-bottom: 20px;
+}
+
+.delete__icon__btn{
+    position: absolute;
+    right: 20px;
+    transition: 0.5S;
+    display: none;
+}
+.delete__icon__btn:hover{
+    transform: rotate(30deg);
+    color: #fff;
+}
+.card:hover .delete__icon__btn{
+    display: block;
+}
