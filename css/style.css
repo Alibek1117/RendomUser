@@ -50,6 +50,16 @@ header i{
     margin: 60px 0;
 
 }
+.light__mode:hover{
+    transform: rotate(3600deg);
+    transition: 60s;
+    cursor: pointer;
+}
+.dark__mode:hover{
+    transform: rotate(3600deg);
+    transition: 60s;
+    cursor: pointer;
+}
 
 .input__search{
     border-bottom: 1px solid coral;
@@ -77,6 +87,17 @@ header i{
     margin: 0 2px;
     color: wheat;
     border-radius: 3px;
+    transition: 0.5s;
+}
+.refresh:hover,
+.clear:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.refresh:active,
+.clear:active{
+    
+    transform: scale(1.02);
 }
 
 .main__users .container{
@@ -114,4 +135,5 @@ header i{
 }
 .card:hover .delete__icon__btn{
     display: block;
+    cursor: pointer;
 }
